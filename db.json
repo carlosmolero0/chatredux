@@ -1,0 +1,230 @@
+{
+  "me": {
+    "gender": "male",
+    "name": {
+      "title": "Mister",
+      "first": "Carlos",
+      "last": "Molero"
+    },
+    "id": 5,
+    "picture": {
+      "large": "https://randomuser.me/api/portraits/men/24.jpg",
+      "medium": "https://randomuser.me/api/portraits/med/men/24.jpg",
+      "thumbnail": "https://randomuser.me/api/portraits/thumb/men/24.jpg"
+    }
+  },
+  "users": [
+    {
+      "gender": "male",
+      "active": false,
+      "name": {
+        "title": "Miss",
+        "first": "Beatrice",
+        "last": "Wilson"
+      },
+      "id": 1,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/24.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/24.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/24.jpg"
+      }
+    },
+    {
+      "gender": "female",
+      "active": true,
+      "name": {
+        "title": "Mrs",
+        "first": "Siiri",
+        "last": "Laitinen"
+      },
+      "id": 2,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/55.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/55.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/55.jpg"
+      }
+    },
+    {
+      "gender": "male",
+      "active": false,
+      "name": {
+        "title": "Ms",
+        "first": "Venla",
+        "last": "Waisanen"
+      },
+      "id": 3,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/84.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/84.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/84.jpg"
+      }
+    },
+    {
+      "gender": "female",
+      "active": true,
+      "name": {
+        "title": "Ms",
+        "first": "Cheraine",
+        "last": "Ritsema"
+      },
+      "id": 4,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/87.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/87.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/87.jpg"
+      }
+    },
+    {
+      "gender": "female",
+      "active": true,
+      "name": {
+        "title": "Miss",
+        "first": "Ülkü",
+        "last": "Arıcan"
+      },
+      "id": 5,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/64.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/64.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/64.jpg"
+      }
+    },
+    {
+      "gender": "male",
+      "active": true,
+      "name": {
+        "title": "Mister",
+        "first": "Carlos",
+        "last": "Molero"
+      },
+      "id": 7,
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/24.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/24.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/24.jpg"
+      }
+    }
+  ],
+  "chats": [
+    {
+      "id": 23123,
+      "chat_id": "asd2j3nakwjsdjnaks",
+      "creator_id": 5,
+      "user_one_id": 5,
+      "user_two_id": 1,
+      "user_two": {
+        "gender": "male",
+        "active": false,
+        "name": {
+          "title": "Miss",
+          "first": "Beatrice",
+          "last": "Wilson"
+        },
+        "id": 1,
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/women/24.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/women/24.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/women/24.jpg"
+        }
+      },
+      "user_one": {
+        "gender": "male",
+        "name": {
+          "title": "Mister",
+          "first": "Carlos",
+          "last": "Molero"
+        },
+        "id": 5,
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/men/24.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/men/24.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/24.jpg"
+        }
+      },
+      "messages": [
+        {
+          "user_id": 5,
+          "message": "Hey mate!!",
+          "created_at": "10-12-2019"
+        },
+        {
+          "user_id": 1,
+          "message": " all right mateeee?",
+          "created_at": "10-12-2019"
+        },
+        {
+          "user_id": 5,
+          "message": "I'm doing fine, you?",
+          "created_at": "10-12-2019"
+        },
+        {
+          "user_id": 5,
+          "message": "Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do any one of a hundred and forty six other things.",
+          "created_at": "10-12-2019"
+        }
+      ]
+    },
+    {
+      "id": 24152,
+      "chat_id": "mclaskdq2asd1sdjnaks",
+      "creator_id": 5,
+      "user_one_id": 5,
+      "user_two_id": 3,
+      "user_two": {
+        "gender": "male",
+        "active": false,
+        "name": {
+          "title": "Ms",
+          "first": "Venla",
+          "last": "Waisanen"
+        },
+        "id": 3,
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/women/84.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/women/84.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/women/84.jpg"
+        }
+      },
+      "user_one": {
+        "gender": "male",
+        "name": {
+          "title": "Mister",
+          "first": "Carlos",
+          "last": "Molero"
+        },
+        "id": 5,
+        "picture": {
+          "large": "https://randomuser.me/api/portraits/men/24.jpg",
+          "medium": "https://randomuser.me/api/portraits/med/men/24.jpg",
+          "thumbnail": "https://randomuser.me/api/portraits/thumb/men/24.jpg"
+        }
+      },
+      "messages": [
+        {
+          "id": "u123uasjd",
+          "user_id": 3,
+          "message": "Hey again!!",
+          "created_at": "10-12-2019"
+        },
+        {
+          "id": "456rhgrt",
+          "user_id": 5,
+          "message": " hey! how you doing?",
+          "created_at": "10-12-2019"
+        },
+        {
+          "id": "0919asd",
+          "user_id": 3,
+          "message": "I'm doing amazing, you?",
+          "created_at": "10-12-2019"
+        },
+        {
+          "id": "dfb092",
+          "user_id": 3,
+          "message": "Wrong. You take the gun, or you pull out a bigger one. Or, you call their bluff. Or, you do any one of a hundred and forty six other things.",
+          "created_at": "10-12-2019"
+        }
+      ]
+    }
+  ]
+}
