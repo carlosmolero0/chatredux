@@ -3,7 +3,7 @@ import React from "react";
 import Lottie from "react-lottie";
 import loaderData from "./lootieLoader.json";
 
-export const Loader = ({ height = 50, width = 50 }) => {
+const Loader = ({ height = 50, width = 50 }) => {
   //react lootie default option (for more info go to lootie files doc...)
   const defaultOptions = {
     loop: true,
@@ -20,3 +20,5 @@ export const Loader = ({ height = 50, width = 50 }) => {
     </>
   );
 };
+
+export default Loader;

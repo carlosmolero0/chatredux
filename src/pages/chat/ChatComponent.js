@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const ChatComponent = ({ chat = {} }) => {
   return (
@@ -20,7 +21,10 @@ const ChatComponent = ({ chat = {} }) => {
             {chat.messages.map((message) => {
               let userMessage = chat.user_two_id === message.user_id;
               return (
-                <li
+                <motion.li
+                  initial={{ opacity: 0, y: 50, scale: 0.3 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{ ease: "easeOut", duration: 0.25 }}
                   className={userMessage ? "sent" : "replies"}
                   key={message.id}
                 >
@@ -33,7 +37,7 @@ const ChatComponent = ({ chat = {} }) => {
                     alt=""
                   />
                   <p>{message.message}</p>
-                </li>
+                </motion.li>
               );
             })}
           </ul>

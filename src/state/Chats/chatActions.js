@@ -28,7 +28,11 @@ export function getChatAction(id) {
     dispatch(getChat());
     try {
       const response = await axiosClient.get(`/chats/${id}`);
-      dispatch(getChatSuccess(response.data));
+      //Here we simulate a request delay of 1 second
+      //so we are able to see the loader on the front
+      setTimeout(() => {
+        dispatch(getChatSuccess(response.data));
+      }, 1000);
     } catch (error) {
       console.log(error);
       //dispatch( getChatError() )

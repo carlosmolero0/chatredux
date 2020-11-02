@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 //Components
 import BottomBar from "./components/BottomBar";
-import { Loader } from "../../utils/loader/";
+import Search from "./components/Search";
+import Loader from "../../utils/loader/";
 
 const SideBar = ({
   chats = [],
@@ -10,24 +12,41 @@ const SideBar = ({
   loading = false,
   error = false,
 }) => {
+  const [showStatus, setShowStatus] = useState(false);
+  const [showSocial, setShowSocial] = useState(false);
+
   return (
     <>
       <div id="sidepanel">
         <div id="profile">
           <div className="wrap">
-            <Link to="/">
-              <img
-                id="profile-img"
-                src="http://emilcarlsson.se/assets/mikeross.png"
-                className="online"
-                alt=""
-              />
-              <p>Mike Ross</p>
+            <img
+              id="profile-img"
+              src="http://emilcarlsson.se/assets/mikeross.png"
+              className="online"
+              alt=""
+              onClick={() => {
+                setShowStatus(!showStatus);
+              }}
+            />
+            <p>Mike Ross</p>
+            <div
+              onClick={() => {
+                setShowSocial(!showSocial);
+              }}
+            >
               <i
                 className="fa fa-chevron-down expand-button"
                 aria-hidden="true"
               ></i>
-              <div id="status-options">
+            </div>
+            {showStatus && (
+              <motion.div
+                id="status-options"
+                initial={{ opacity: 0, y: -80, x: -30, scale: 0.3 }}
+                animate={{ opacity: 1, y: 0, x: 0, scale: 1 }}
+                transition={{ ease: "easeIn", duration: 0.1 }}
+              >
                 <ul>
                   <li id="status-online" className="active">
                     <span className="status-circle"></span> <p>Online</p>
@@ -42,7 +61,9 @@ const SideBar = ({
                     <span className="status-circle"></span> <p>Offline</p>
                   </li>
                 </ul>
-              </div>
+              </motion.div>
+            )}
+            {showSocial && (
               <div id="expanded">
                 <label htmlFor="twitter">
                   <i className="fa fa-facebook fa-fw" aria-hidden="true"></i>
@@ -57,15 +78,10 @@ const SideBar = ({
                 </label>
                 <input name="twitter" type="text" value="mike.ross" />
               </div>
-            </Link>
+            )}
           </div>
         </div>
-        <div id="search">
-          <label htmlFor="">
-            <i className="fa fa-search" aria-hidden="true"></i>
-          </label>
-          <input type="text" placeholder="Search contacts..." />
-        </div>
+        <Search />
         {!loading && (
           <div id="contacts">
             <ul>

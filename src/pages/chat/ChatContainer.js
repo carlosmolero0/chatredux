@@ -8,9 +8,9 @@ import { useDispatch, useSelector } from "react-redux";
 //Redux actions
 import { getChatAction } from "../../state/Chats/chatActions";
 //loader
-import { Loader } from "../../utils/loader/";
+import Loader from "../../utils/loader/";
 
-const ChatContainer = ({}) => {
+const ChatContainer = () => {
   let { id, chatId } = useParams();
 
   const dispatch = useDispatch();
