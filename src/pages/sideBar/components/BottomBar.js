@@ -8,7 +8,7 @@ const BottomBar = () => {
         <i className="fa fa-user-plus fa-fw" aria-hidden="true"></i>{" "}
         <span>Add contact</span>
       </button>
-      <Link to="/">
+      <Link to="/settings">
         <button id="settings">
           <i className="fa fa-cog fa-fw" aria-hidden="true"></i>{" "}
           <span>Settings</span>

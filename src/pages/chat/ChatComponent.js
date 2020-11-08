@@ -1,7 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import { motion } from "framer-motion";
 
-const ChatComponent = ({ chat = {} }) => {
+const ChatComponent = ({ chat = {}, handleSendMessage=()=>{} }) => {
+
+  const [message, setMessage] = useState('');
+
+  const handleClick = () => {
+    handleSendMessage(message);
+  }
+
   return (
     <div className="content">
       <div className="contact-profile">
@@ -48,9 +55,9 @@ const ChatComponent = ({ chat = {} }) => {
 
       <div className="message-input">
         <div className="wrap">
-          <input type="text" placeholder="Write your message..." />
+          <input type="text" placeholder="Write your message..." onChange={(e)=>{setMessage(e.currentTarget.value)}} value={message}/>
           <i className="fa fa-paperclip attachment" aria-hidden="true"></i>
-          <button className="submit">
+          <button className="submit" onClick={handleClick}>
             <i className="fa fa-paper-plane" aria-hidden="true"></i>
           </button>
         </div>

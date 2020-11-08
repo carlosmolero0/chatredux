@@ -18,6 +18,7 @@ function App() {
           <Switch>
             <Route exact path={CHAT_ROUTE} component={ChatContainer} />
             <Route exact path="/" />
+           {/*  <Route exact path="/settings" component={UserSettings} /> */}
           </Switch>
         </div>
       </Provider>

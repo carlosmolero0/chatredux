@@ -46,8 +46,6 @@ a:hover {
 
 #frame #sidepanel {
   float: left;
-  min-width: 280px;
-  max-width: 340px;
   height: 100%;
   background: #2c3e50;
   color: #f5f5f5;
@@ -692,7 +690,7 @@ a:hover {
 }
 #frame .content .message-input {
   position: absolute;
-  bottom: 0;
+  bottom: -7px;
   width: 100%;
   z-index: 99;
 }

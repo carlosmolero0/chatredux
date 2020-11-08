@@ -45,7 +45,7 @@ const SideBar = ({
                 id="status-options"
                 initial={{ opacity: 0, y: -80, x: -30, scale: 0.3 }}
                 animate={{ opacity: 1, y: 0, x: 0, scale: 1 }}
-                transition={{ ease: "easeIn", duration: 0.1 }}
+                transition={{ ease: "easeIn", duration: 0.15 }}
               >
                 <ul>
                   <li id="status-online" className="active">
@@ -64,7 +64,12 @@ const SideBar = ({
               </motion.div>
             )}
             {showSocial && (
-              <div id="expanded">
+              <motion.div
+                id="expanded"
+                initial={{ opacity: 0, y: -80, x: 30, scale: 0.1 }}
+                animate={{ opacity: 1, y: 0, x: 0, scale: 1 }}
+                transition={{ ease: "easeIn", duration: 0.15 }}
+              >
                 <label htmlFor="twitter">
                   <i className="fa fa-facebook fa-fw" aria-hidden="true"></i>
                 </label>
@@ -77,7 +82,7 @@ const SideBar = ({
                   <i className="fa fa-instagram fa-fw" aria-hidden="true"></i>
                 </label>
                 <input name="twitter" type="text" value="mike.ross" />
-              </div>
+              </motion.div>
             )}
           </div>
         </div>

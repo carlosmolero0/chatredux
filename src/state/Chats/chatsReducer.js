@@ -5,6 +5,7 @@ import {
   GET_CHATS,
   GET_CHATS_SUCCESS,
   GET_CHATS_ERROR,
+  SEND_MESSAGE_SUCCESS
 } from "./chatTypes";
 
 const initialState = {
@@ -57,6 +58,17 @@ export default function (state = initialState, action) {
         chat: {},
         error: action.payload,
       };
+    case SEND_MESSAGE_SUCCESS:
+      return {
+        ...state,
+        chat: {
+          ...state.chat,
+          messages:[
+            ...state.chat.messages,
+            action.payload.message
+          ]
+        }
+      }
     default:
       return state;
   }
